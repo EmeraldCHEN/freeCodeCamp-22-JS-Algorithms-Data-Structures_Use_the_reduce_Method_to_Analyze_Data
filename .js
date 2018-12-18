@@ -122,6 +122,14 @@ console.log("The average IMDB rating of the movies directed by Christopher Nolan
 
 
 
+/////////      OR           ///////////////////////////////////////////////////////
+
+let averageRate = watchList.filter(x => x.Director === "Christopher Nolan")
+    .map(x => Number(x.imdbRating)) // The rating values are saved as strings in the object 
+                                    // so convert them into numbers before being used in mathematical operations
+    
+.reduce((x1, x2) => x1 + x2) / watchList.filter(x => x.Director === "Christopher Nolan").length;
+
 
 // Retrieved from
 // https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data/
