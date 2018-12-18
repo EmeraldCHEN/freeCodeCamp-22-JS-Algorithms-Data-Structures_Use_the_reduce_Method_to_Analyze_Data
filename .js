@@ -119,3 +119,9 @@ let totalRate = filterList.reduce((x1, x2) => x1 + x2);
 let averageRating = parseFloat(totalRate / filterList.length);
 
 console.log("The average IMDB rating of the movies directed by Christopher Nolan is: " + averageRating); 
+
+
+
+
+// Retrieved from
+// https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data/
