@@ -1,4 +1,4 @@
-// the global variable
+
 var watchList = [
                  {  
                    "Title": "Inception",
@@ -112,11 +112,10 @@ var watchList = [
                 }
 ];
 
-let filterList = watchList.filter(item => 
-item["Director"] == "Christopher Nolan").map(item => parseFloat(item["imdbRating"]));
+let filterList = watchList.filter(item => item["Director"] == "Christopher Nolan").map(item => parseFloat(item["imdbRating"]));
 
 let totalRate = filterList.reduce((x1, x2) => x1 + x2);
 
 let averageRating = parseFloat(totalRate / filterList.length);
 
-console.log(averageRating); 
+console.log("The average IMDB rating of the movies directed by Christopher Nolan is: " + averageRating); 
