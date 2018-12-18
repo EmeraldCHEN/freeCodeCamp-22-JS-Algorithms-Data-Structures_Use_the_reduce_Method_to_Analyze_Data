@@ -1,0 +1,1 @@
+# freeCodeCamp-22-JS-Algorithms-Data-Structures_Use_the_reduce_Method_to_Analyze_Data
